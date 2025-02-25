@@ -13,8 +13,8 @@ AR4VI (Augmented Reality for Visually Impaired) is a Flask-based web application
 
 ## Installation
 
-1. Clone the repository:
-2. Install required dependencies:
+1. Clone the repository;
+2. Install required dependencies;
 3. Ensure you have the necessary models and data files for object detection and face recognition.
 
 ## Usage
