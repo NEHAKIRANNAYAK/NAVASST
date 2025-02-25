@@ -1,14 +1,47 @@
-# Virtual Assistant
-It is a virtual assistant for visually impaired which include models like face recognition, object detection, text to speech, speech recognition. The idea behind this project is to host this website and use it from mobile phones and therefore the website's UI is designed according to mobile phones.
+# AR4VI: Assistive Navigation for the Visually Impaired
 
-### Requirements and usage 
-* Clone this repository using :- `git clone https://github.com/Deimos-M/DL-Virtual-Assistant.git`
-* Install dependencies using :- `pip install -r requirements.txt`
-* Downlaod Tiny yolo pre-trained model from here :- <a href="https://github.com/OlafenwaMoses/ImageAI/releases/download/1.0/yolo-tiny.h5">**Download**</a> 
-* Run the application using :- `python App.py`
-* Once the link appears, open it in your web browser and do either of the following  :- 
-    * Press `ctrl+shift+M` in Mozilla.
-    * Press `F12` then `ctrl+shift+M` in Chrome.
+## Project Overview
 
-Note :- This website runs on the local machine and is not yet hosted on the internet. (:-|)
+AR4VI (Augmented Reality for Visually Impaired) is a Flask-based web application designed to assist visually impaired individuals with navigation and object recognition. The project utilizes computer vision techniques for object detection and face recognition to provide real-time feedback to users.
+
+## Features
+
+1. Object Detection: Identifies and locates objects in the user's environment.
+2. Face Recognition: Detects and recognizes faces, with the ability to add new faces to the system.
+3. Real-time Video Streaming: Provides live video feed with object and face detection overlays.
+4. User-friendly Web Interface: Easy-to-use web pages for accessing different functionalities.
+
+## Installation
+
+1. Clone the repository:
+2. Install required dependencies:
+3. Ensure you have the necessary models and data files for object detection and face recognition.
+
+## Usage
+
+1. Run the Flask application:
+   ```
+   python app.py
+   ```
+
+2. Open a web browser and navigate to `http://localhost:5000`
+
+3. Use the web interface to access object detection and face recognition features.
+
+## File Structure
+
+- `app.py`: Main Flask application file
+- `object_camera.py`: Contains `VideoCamera` class for object detection
+- `facecam.py`: Contains `Facecamera` class for face recognition
+- `templates/`: HTML templates for the web interface
+  - `object_index.html`: Main page for object detection
+  - `object_index2.html`: Page displayed after closing object detection
+  - `face_index.html`: Main page for face recognition
+  - `face_index2.html`: Page displayed after closing face recognition
+
+## Future Development
+
+- Mobile application development is pending for increased portability and accessibility.
+- Further optimization for real-time performance on mobile devices.
+- Integration with additional assistive technologies for comprehensive support.
 
